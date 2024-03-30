@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Mon Book</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    </head>
+    <body> 
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo"><a href="#">Mon Book</a></li>
+                    <li><a href="#langue">Langues</a></li>
+                    <li><a href="#TexteQuiJeSuis">Qui je suis ?</a></li>
+                    <li><a href="#ProjetEnCours">Projet en cours..</a></li>
+                    <li><a href="#contact">Me contacter</a></li>
+                    
+                         
+
+                </ul>
+            </nav>
+            <div id="ImagePrincipale">
+                <h1>Mon Book</h1>
+                <div id="PremierTrait"></div>
+                <h3>Léo Guerriau</h3>
+            </div>
+
+        </header>
+        <section id="Mesdessinsetpeintures">
+            <div id="TexteIntro">
+                <h2>Mes dessins et peintures</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt fugiat sit, quos id reprehenderit nihil vitae consequuntur nulla eos dolores commodi, a dicta ullam deserunt atque suscipit consequatur 
+                    voluptatum distinctio. Recusandae quidem autem ratione nisi?
+                    Eos beatae expedita nemo rerum?</p>
+            </div>
+        
+            <div id="Prestation">
+                <div class="imagePrestation">
+                    <h4>Peinture à l'huile</h4>
+                    <a href="media/IMG_20240128_112322.jpg" onclick="openFullscreen('media/IMG_20240128_112322.jpg'); return false;">
+                        <img src="media/Shangri_La_200x266.jpg" alt="Shangri La">
+                    </a>
+                    <p>Ca c'est une peinture à l'huile que j'ai réalisé à partir d'une cover d'une BD qui m'a beacoup et qui s'appelle 'Shangri La', je vous la conseille fortement §</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Un Lion</h4>
+                    <a href="media/IMG_20240211_105701.jpg" onclick="openFullscreen('media/IMG_20240211_105701.jpg'); return false;">
+                        <img src="media/Lion_200x266.jpg" alt="Mon Lion">
+                    </a>
+                    <p>Ma première peinture, elle m'a pris beaucoup de temps mais je suis toujour fière du résultat.</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Mon Premier Projet</h4>
+                    <a href="mmedia/IMG_20240211_105244.jpg" onclick="openFullscreen('media/IMG_20240211_105244.jpg'); return false;">
+                        <img src="media/Bateaux_200x266.jpg" alt="Fusain">
+                    </a>
+                    <p>C'est  la première fois que j'ai essayé le fusain, j'ai pris comme base une photo simple de bateaux </p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Oeil de Tigre</h4>
+                    <a href="media/IMG_20240211_105524.jpg" onclick="openFullscreen('media/IMG_20240211_105524.jpg'); return false;">
+                        <img src="media/OeilTigre_200x266.jpg" alt="Oeil de Tigre">
+                    </a>
+                    <p>Là aussi j'ai voulu essayer le pastel, c'est un travaille interessant et beaucoup plus compliqué que on pense..</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Oeil de Serpent</h4>
+                    <a href="media/IMG_20240211_104546.jpg" onclick="openFullscreen('media/IMG_20240211_104546.jpg'); return false;">
+                        <img src="media/OeilSerpent_200x266.jpg" alt="Oeil de Serpent">
+                    </a>
+                    <p>Comme vous le voyez, j'aime travailler sur les yeux, et encore plus à l'aquarelle, j'ai vraiment aimé réalisé cette oeil de serpent !</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Méduse</h4>
+                    <a href="media/IMG_20240211_105036.jpg" onclick="openFullscreen('media/IMG_20240211_105036.jpg'); return false;">
+                        <img src="media/Méduses_200x266.jpg" alt="Méduse">
+                    </a>
+                    <p>Des petites Méduses que j'ai reproduit à l'aide d'une photo, les couleurs étaient vraiment sympa à travailler</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>La Mort de Marat</h4>
+                    <a href="media/DeathOfMarat2.jpg" onclick="openFullscreen('media/DeathOfMarat2.jpg'); return false;">
+                        <img src="media/DeathOfMarat1200x266.jpg" alt="DeathOfMarat">
+                    </a>
+                    <p>Ce dessin au charbo et au crayon gris fait partie de une de mes oeuvres de bac, qui porte sur la notion du détail. J'ai décider d'exploiter seulement un detail d'un tableau pour en faire de ce detail une oeuvre elle-même</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>Explosion</h4>
+                    <a href="media/Explosion2.jpg" onclick="openFullscreen('media/Explosion2.jpg'); return false;">
+                        <img src="media/Explosion1.200x266.jpg" alt="Explosion">
+                    </a>
+                    <p>Ici c'est une tache que j'ai fait à l'aquarelle et que j'ai décidé d'exploiter pour créer un champ de bataille !</p>
+                </div>
+                <div class="imagePrestation">
+                    <h4>l'Ange Déchu</h4>
+                    <a href="media/AngeDechu.jpg" onclick="openFullscreen('media/AngeDechu.jpg'); return false;">
+                        <img src="media/AngeDechu.200x266.jpg" alt="AngeDechu">
+                    </a>
+                    <p>Une autre création qui est basé sur le detail, le même principe que sur l'çeuvre de David </p>
+                </div>
+            </div>
+            
+            
+            <!-- Conteneur pour l'image en plein écran -->
+            <div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullscreen()">
+                <img class="fullscreen-image" src="" alt="Image en plein écran">
+            </div>
+
+            <div id="TexteQuiJeSuis">
+                <h2>Qui je suis ?</h2>
+                <p>Cela fait depuis ma primaire que je me sens attiré par le domaine artistique. C'est à partir de ces âges que j'ai commencé à dessiner et à peindre, et cela ne s'est jamais arrêté. Arrivé au collège, j'ai décidé de m'inscrire à des cours de dessin et de peinture que j'ai suivis jusqu'en 3ème. Sans avoir beaucoup de technique au départ, grâce à l'aide de mon professeur, j'ai appris et découvert beaucoup de techniques différentes. Je choisissais une photo ou une œuvre réelle qui me plaisait et je la reproduisais. La reproduction m'a beaucoup aidé car cela m'a permis de me perfectionner dans mes propres dessins imaginaires, etc. Au cours de ces trois années, j'ai expérimenté la peinture à l'huile, le fusain, le pastel gras et sec, et l'aquarelle qui est restée et reste ce que je préfère. J'ai aussi progressé en dessin pur, ce qui est ce que j'aime le plus. J'aime beaucoup apporter des détails à mes dessins. Je pense que mon style de dessin se rapproche beaucoup de celui d'un bédéiste, je pense notamment à l'auteur Mathieu Bablet, qui est un illustrateur que j'apprécie particulièrement.
+
+                    Après cette année, j'ai eu la chance de faire un long voyage avec ma famille durant toute ma seconde. Malgré cela, j'ai essayé de pratiquer le dessin pendant notre voyage avec un sac comme seul bagage. Arrivé en première, je savais définitivement quelle serait mon choix de spécialité. J'ai bien évidemment choisi l'Art plastique suivi de NSI et de Mathématiques. J'ai découvert, là encore, une autre forme de pratique, en mélangeant dans une œuvre le fond et la forme, avec une symbolique réelle travaillée.
+                    
+                    Ainsi, au cours de mes années lycée, j'ai travaillé avec les connaissances acquises par le passé ainsi que celles-ci. En terminale, j'ai gardé l'Art comme spécialité. En parallèle de mes travaux pour le baccalauréat, j'ai continué à travailler le dessin dans un carnet, mais aussi tous les mercredis après-midi, par exemple, en tant qu'intervenant dans l'établissement.</p>
+                
+            </div>
+           
+            </div>
+            <div id="ProjetEnCours">
+                <h2>Projet en Cours</h2>
+                <p>En ce moment je travais sur un projet d'art qui vest presque finalisé. C'est une structure composé de tous les os de la main mi en exposition derrière une vitre. C'est enfaite là, une oeuvre de mon projet de bac sur la notion du détail. Et oui, les os que l'on voit sont des parties d'un plus gors élèments, des details d'un animal qui à peut-être existé, qui sait ?</p>
+                <div class="ImagesProjets">
+                    <h4>Main Assemblée</h4>
+                    <a href="media/MainAssemblee.jpg" onclick="openFullscreen('mmedia/MainAssemblee.jpg'); return false;">
+                        <img src="media/MainAssemblee.jpg" alt="MainAssemblée">
+                    </a>
+                </div>
+                <div class="ImagesProjets">
+                    <h4>Main Final</h4>
+                    <a href="media/IMG_20240110_081939.jpg" onclick="openFullscreen('media/IMG_20240110_081939.jpg'); return false;">
+                        <img src="media/Os200x266 (1).jpg" alt="MainFinal">
+                    </a>
+                </div>
+                <div class="ImagesProjets">
+                    <h4>Main Final</h4>
+                    <a href="media/MainFinal1.jpg" onclick="openFullscreen('media/MainFinal1.jpg'); return false;">
+                        <img src="media/MainFinal2.jpg" alt="MainFinal">
+                    </a>
+                </div>
+            </div>
+
+        <section>
+        
+        <footer>
+            <h2 id="contact">Contactez-moi</h2>
+            <form>
+                <input placeholder="Nom">
+                <input placeholder="Email">
+                <textarea placeholder="Votre Meassage.."></textarea>
+                <button>Envoyer</button>
+            </form>
+            <div id="DeuxiemeTrait"></div>*
+            <div id="CopyRightEtIcon">
+                <div id="Copyright">
+                    <span>© Léo Guerriau(); 2024</span>
+                </div>
+                <div id="Icon">
+                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
